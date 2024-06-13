@@ -5,7 +5,7 @@ print("Area Calculator")
 print("===============")
 print()
 
-# Function to list the available shapes and prompt the user to select one
+# Function to list the available shapes and prompt the user to select one.
 def list_shapes():
     print("1. Triangle")
     print("2. Rectangle")
