@@ -20,41 +20,57 @@ def list_shapes():
 # Get the user's shape choice
 shape = list_shapes()
 
+# Function to calculate and print the area of a triangle
+def triangle():
+    base = int(input("Base: "))
+    height = int(input('Height: '))
+    print()
+    triangle_area = (height * base) / 2
+    print(f'The Area is {triangle_area}')
+    print()
+
+# Function to calculate and print the area of a rectangle
+def rectangle():
+    width = int(input("Width: "))
+    height = int(input('Height: '))
+    print()
+    rectangle_area = height * width
+    print(f'The Area is {rectangle_area}')
+    print()
+
+# Function to calculate and print the area of a square
+def square():
+    side = int(input("Side: "))
+    print()
+    square_area = side ** 2
+    print(f'The Area is {square_area}')
+    print()
+
+# Function to calculate and print the area of a circle
+def circle():
+    radius = int(input("Radius: "))
+    print()
+    circle_area = math.pi * radius**2
+    print(f'The Area is {circle_area}')
+    print()
+
 # Loop until the user chooses to quit (option 5)
 while shape != 5:
     if shape == 1:
         # Calculate the area of a triangle
-        base = int(input("Base: "))
-        height = int(input('Height: '))
-        print()
-        triangle_area = (height * base) / 2
-        print(f'The Area is {triangle_area}')
-        print()
+        triangle()
         shape = list_shapes()
     elif shape == 2:
         # Calculate the area of a rectangle
-        width = int(input("Width: "))
-        height = int(input('Height: '))
-        print()
-        rectangle_area = height * width
-        print(f'The Area is {rectangle_area}')
-        print()
+        rectangle()
         shape = list_shapes()
     elif shape == 3:
         # Calculate the area of a square
-        side = int(input("side: "))
-        print()
-        square_area = side ** 2
-        print(f'The Area is {square_area}')
-        print()
+        square()
         shape = list_shapes()
     elif shape == 4:
         # Calculate the area of a circle
-        radius = int(input("Radius: "))
-        print()
-        circle_area = math.pi * radius**2
-        print(f'The Area is {circle_area}')
-        print()
+        circle()
         shape = list_shapes()
     else:
         # Handle invalid shape choice
